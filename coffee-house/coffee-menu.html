@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="css/menu-style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="images/icons-coffee.ico">
+
+</head>
+  <body>
+   <header class="header" id="header">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mx-40">
+          <a class="navbar-brand" href="coffee-house.html" target="_blank">
+            <img src="images/logo.png" alt="logo" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <img src="images/button-icon-burger.png" alt="Burger-menu Icon" class="burger-menu">
+            <img src="images/button-close-burger.png" alt="Close Button" class="close-button">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link me-40" href="#">Favorite coffee</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link me-40" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link me-40" href="#">Mobile app</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+          
+             
+            </ul>
+            <div class="menu me-40">
+              <p class="menu-item">Menu</p>
+              <img src="images/coffee-cup.png" alt="coffee cup" class="menu-item-img">
+          </div>
+        </div>
+        </div>
+      </nav>
+   </header>
+
+   <section class="menu my-100">
+    <div class="container d-flex flex-column align-items-center">
+        <div class="row mb-5">
+            <h2 class="menu-title">Behind each of our cups hides an <span class="menu-light-title">amazing surprise</span></h2>
+        </div>
+
+        <div class="row mb-5">
+          <div class="menu-buttons-group">
+            <button class="menu-btn menu-btn-active menu-coffee-btn">
+              <div class="type">
+                  <img src="images/coffee.png" alt="Coffe Cup" class="img-fluid">
+              </div>
+              Coffee
+            </button>
+
+            <button class="menu-btn menu-tea-btn">
+              <div class="type">
+                <img src="images/tea.png" alt="Tea Cup" class="img-fluid">
+              </div>
+              Tea
+            </button>
+
+            <button class="menu-btn menu-dessert-btn">
+              <div class="type">
+                <img src="images/desert.png" alt="Desert Cup" class="img-fluid">
+              </div>
+              Dessert
+            </button>
+          </div>
+        </div>
+       
+      <div class="coffee-cards">
+        <div class="card-container">
+           
+                <div class="coffee-card">
+                        <img src="images/coffee-1.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="card-text">
+                            <h2 class="coffee-card-title">Irish coffee</h2>
+                            <p class="coffee-card-text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                            <p class="coffee-card-bold-text">$7.00</p>
+                        </div>
+                </div>
+           
+                <div class="coffee-card">
+                        <img src="images/coffee-2.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#secondModal">
+                        <div class="card-text">
+                            <h2 class="coffee-card-title">Kahlua coffee</h2>
+                            <p class="coffee-card-text">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                            <p class="coffee-card-bold-text">$7.00</p>
+                        </div>
+                </div>
+    
+            
+                <div class="coffee-card">
+                        <img src="images/coffee-3.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#thirdModal">
+                        <div class="card-text">
+                            <h2 class="coffee-card-title">Honey raf</h2>
+                            <p class="coffee-card-text">Espresso with frothed milk, cream and aromatic honey</p>
+                            <p class="coffee-card-bold-text">$5.50</p>
+                        </div>
+                </div>
+
+                <div class="coffee-card">
+                        <img src="images/coffee-4.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#fourthModal">
+                        <div class="card-text">
+                            <h2 class="coffee-card-title">Ice cappuccino</h2>
+                            <p class="coffee-card-text">Cappuccino with soft thick foam in summer version with ice</p>
+                            <p class="coffee-card-bold-text">$5.00</p>
+                        </div>
+                </div>
+
+                <div class="coffee-card">
+                    <img src="images/coffee-5.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#fifthModal">
+                    <div class="card-text">
+                        <h2 class="coffee-card-title">Espresso</h2>
+                        <p class="coffee-card-text">Classic black coffee</p>
+                        <p class="coffee-card-bold-text">$4.50</p>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <img src="images/coffee-6.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#sixthModal">
+                    <div class="card-text">
+                        <h2 class="coffee-card-title">Latte</h2>
+                        <p class="coffee-card-text">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                        <p class="coffee-card-bold-text">$5.50</p>
+                    </div>
+                </div>
+
+
+                <div class="coffee-card">
+                    <img src="images/coffee-7.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#sevenModal">
+                    <div class="card-text">
+                        <h2 class="coffee-card-title">Latte macchiato</h2>
+                        <p class="coffee-card-text">Espresso with frothed milk and chocolate</p>
+                        <p class="coffee-card-bold-text">$5.50</p>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <img src="images/coffee-8.png" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#eightModal">
+                    <div class="card-text">
+                        <h2 class="coffee-card-title">Coffee with cognac</h2>
+                        <p class="coffee-card-text">Fragrant black coffee with cognac and whipped cream</p>
+                        <p class="coffee-card-bold-text">$6.50</p>
+                    </div>
+                </div>
+
+
+                <div class="coffee-card">
+                    <img src="images/coffee-9.jpg" alt="Coffee" class="img-fluid coffee-card-img" data-bs-toggle="modal" data-bs-target="#lastModal">
+                    <div class="card-text">
+                        <h2 class="coffee-card-title">Cappuccino</h2>
+                        <p class="coffee-card-text">Classic cappuccino</p>
+                        <p class="coffee-card-bold-text">$5.00</p>
+                    </div>
+                </div>
+          </div>
+      </div>
+
+
+      <div class="dessert-cards">
+         <div class="desert-card-container">
+           
+              <div class="desert-card">
+                      <img src="images/dessert-1.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertFirstModal">
+                      <div class="desert-text">
+                          <h2 class="desert-card-title">Marble cheesecake</h2>
+                          <p class="desert-card-text">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+                          <p class="desert-card-bold-text">$3.50</p>
+                      </div>
+              </div>
+  
+              <div class="desert-card">
+                  <img src="images/dessert-2.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertSecondModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Red velvet</h2>
+                      <p class="desert-card-text">Layer cake with cream cheese frosting</p>
+                      <p class="desert-card-bold-text">$4.00</p>
+                  </div>
+              </div>
+  
+              <div class="desert-card">
+                  <img src="images/dessert-3.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertThirdModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Cheesecakes</h2>
+                      <p class="desert-card-text">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+                      <p class="desert-card-bold-text">$4.50</p>
+                  </div>
+              </div>
+  
+  
+              <div class="desert-card">
+                  <img src="images/dessert-4.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertFourthModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Creme brulee</h2>
+                      <p class="desert-card-text">Delicate creamy dessert in a caramel basket with wild berries</p>
+                      <p class="desert-card-bold-text">$4.00</p>
+                  </div>
+              </div>
+  
+  
+              <div class="desert-card">
+                  <img src="images/dessert-5.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertFifthModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Pancakes</h2>
+                      <p class="desert-card-text">Tender pancakes with strawberry jam and fresh strawberries</p>
+                      <p class="desert-card-bold-text">$4.50</p>
+                  </div>
+              </div>
+  
+  
+              <div class="desert-card">
+                  <img src="images/dessert-6.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertSixthModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Honey cake</h2>
+                      <p class="desert-card-text">Classic honey cake with delicate custard</p>
+                      <p class="desert-card-bold-text">$4.50</p>
+                  </div>
+              </div>
+  
+  
+              <div class="desert-card">
+                  <img src="images/dessert-7.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertSevenModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Chocolate cake</h2>
+                      <p class="desert-card-text">Cake with hot chocolate filling and nuts with dried apricots</p>
+                      <p class="desert-card-bold-text">$5.50</p>
+                  </div>
+              </div>
+  
+  
+              <div class="desert-card">
+                  <img src="images/dessert-8.png" alt="Desert" class="img-fluid desert-card-img" data-bs-toggle="modal" data-bs-target="#desertLastModal">
+                  <div class="desert-text">
+                      <h2 class="desert-card-title">Black forest</h2>
+                      <p class="desert-card-text">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+                      <p class="desert-card-bold-text">$6.50</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+          
+
+      <div class="tea-cards">
+        <div class="tea-card-container">
+             
+              <div class="tea-card">
+                      <img src="images/tea-1.png" alt="Tea" class="img-fluid tea-card-img" data-bs-toggle="modal" data-bs-target="#teaFirstModal">
+                      <div class="tea-text">
+                          <h2 class="tea-card-title">Moroccan</h2>
+                          <p class="tea-card-text">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+                          <p class="tea-card-bold-text">$4.50</p>
+                      </div>
+              </div>
+  
+              <div class="tea-card">
+                  <img src="images/tea-2.png" alt="Tea" class="img-fluid tea-card-img" data-bs-toggle="modal" data-bs-target="#teaSecondModal">
+                  <div class="tea-text">
+                      <h2 class="tea-card-title">Ginger</h2>
+                      <p class="tea-card-text">Original black tea with fresh ginger, lemon and honey</p>
+                      <p class="tea-card-bold-text">$5.00</p>
+                  </div>
+              </div>
+  
+  
+                  <div class="tea-card">
+                      <img src="images/tea-3.png" alt="Tea" class="img-fluid tea-card-img" data-bs-toggle="modal" data-bs-target="#teaThirdModal">
+                      <div class="tea-text">
+                          <h2 class="tea-card-title">Cranberry</h2>
+                          <p class="tea-card-text">Invigorating black tea with cranberry and honey</p>
+                          <p class="tea-card-bold-text">$5.00</p>
+                      </div>
+                  </div>
+  
+  
+              <div class="tea-card">
+                  <img src="images/tea-4.png" alt="Tea" class="img-fluid tea-card-img" data-bs-toggle="modal" data-bs-target="#teaLastModal">
+                  <div class="tea-text">
+                      <h2 class="tea-card-title">Sea buckthorn</h2>
+                      <p class="tea-card-text">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+                      <p class="tea-card-bold-text">$5.50</p>
+                  </div>
+              </div>
+          </div>
+     </div>
+     </div>
+  </section>
+    <!-- Modals -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+     
+        <div class="modal-body d-flex">
+          <div class="col-6  modal-img-column">
+            <img src="images/coffee-1.png" alt="" class="img-fluid modal-img">
+          </div>
+          <div class="col-6 modal-text-column">
+            <h2 class="modal-title">Irish coffee</h2>
+            <p class="modal-text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+            <p class="modal-text">Size</p>
+
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-active">
+                    <div class="size">S</div> 
+                    200ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">M</div>
+                    300ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">L</div>
+                    400ml
+                </button>
+            </div>
+                <p class="modal-text">Additives</p>
+
+                <div class="modal-btn-group">
+                    <button class="modal-btn">
+                        <div class="count">1</div> 
+                        Sugar
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">2</div>
+                        Cinnamon
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">3</div>
+                        Syrup
+                    </button>
+                </div>
+
+                <div class="total">
+                    <p class="total-text">Total:</p>
+                    <p class="total-text">$7.00</p>
+                </div>
+         
+   
+         <div class="modal-footer-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_268_12877)">
+                  <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_268_12877">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+         </div>
+       
+
+        <button class="modal-footer-btn" type="button">Order</button>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--second-->
+  <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+     
+        <div class="modal-body d-flex">
+          <div class="col-6  modal-img-column">
+            <img src="images/coffee-2.png" alt="" class="img-fluid modal-img">
+          </div>
+          <div class="col-6 modal-text-column">
+            <h2 class="modal-title">Kahlua coffee</h2>
+            <p class="modal-text">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+            <p class="modal-text">Size</p>
+
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-active">
+                    <div class="size">S</div> 
+                    200ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">M</div>
+                    300ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">L</div>
+                    400ml
+                </button>
+            </div>
+                <p class="modal-text">Additives</p>
+
+                <div class="modal-btn-group">
+                    <button class="modal-btn">
+                        <div class="count">1</div> 
+                        Sugar
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">2</div>
+                        Cinnamon
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">3</div>
+                        Syrup
+                    </button>
+                </div>
+
+                <div class="total">
+                    <p class="total-text">Total:</p>
+                    <p class="total-text">$5.50</p>
+                </div>
+         
+   
+         <div class="modal-footer-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_268_12877)">
+                  <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_268_12877">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+         </div>
+       
+
+        <button class="modal-footer-btn" type="button">Order</button>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--thrird-->
+
+  <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="thirdModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+     
+        <div class="modal-body d-flex">
+          <div class="col-6  modal-img-column">
+            <img src="images/coffee-3.png" alt="" class="img-fluid modal-img">
+          </div>
+          <div class="col-6 modal-text-column">
+            <h2 class="modal-title">Honey raf</h2>
+            <p class="modal-text">Espresso with frothed milk, cream and aromatic honey</p>
+            <p class="modal-text">Size</p>
+
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-active">
+                    <div class="size">S</div> 
+                    200ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">M</div>
+                    300ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">L</div>
+                    400ml
+                </button>
+            </div>
+                <p class="modal-text">Additives</p>
+
+                <div class="modal-btn-group">
+                    <button class="modal-btn">
+                        <div class="count">1</div> 
+                        Sugar
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">2</div>
+                        Cinnamon
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">3</div>
+                        Syrup
+                    </button>
+                </div>
+
+                <div class="total">
+                    <p class="total-text">Total:</p>
+                    <p class="total-text">$7.00</p>
+                </div>
+         
+   
+         <div class="modal-footer-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_268_12877)">
+                  <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_268_12877">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+         </div>
+       
+
+        <button class="modal-footer-btn" type="button">Order</button>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <!--fourth-->
+
+  <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="fourthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+     
+        <div class="modal-body d-flex">
+          <div class="col-6  modal-img-column">
+            <img src="images/coffee-4.png" alt="" class="img-fluid modal-img">
+          </div>
+          <div class="col-6 modal-text-column">
+            <h2 class="modal-title">Ice cappuccino</h2>
+            <p class="modal-text">Cappuccino with soft thick foam in summer version with ice</p>
+            <p class="modal-text">Size</p>
+
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-active">
+                    <div class="size">S</div> 
+                    200ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">M</div>
+                    300ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">L</div>
+                    400ml
+                </button>
+            </div>
+                <p class="modal-text">Additives</p>
+
+                <div class="modal-btn-group">
+                    <button class="modal-btn">
+                        <div class="count">1</div> 
+                        Sugar
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">2</div>
+                        Cinnamon
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">3</div>
+                        Syrup
+                    </button>
+                </div>
+
+                <div class="total">
+                    <p class="total-text">Total:</p>
+                    <p class="total-text">$5.50</p>
+                </div>
+         
+   
+         <div class="modal-footer-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_268_12877)">
+                  <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_268_12877">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+         </div>
+       
+
+        <button class="modal-footer-btn" type="button">Order</button>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <!--fifth-->
+  <div class="modal fade" id="fifthModal" tabindex="-1" aria-labelledby="fifthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+     
+        <div class="modal-body d-flex">
+          <div class="col-6  modal-img-column">
+            <img src="images/coffee-5.png" alt="" class="img-fluid modal-img">
+          </div>
+          <div class="col-6 modal-text-column">
+            <h2 class="modal-title">Espresso</h2>
+            <p class="modal-text">Classic black coffee</p>
+            <p class="modal-text">Size</p>
+
+            <div class="modal-btn-group">
+                <button class="modal-btn modal-btn-active">
+                    <div class="size">S</div> 
+                    200ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">M</div>
+                    300ml
+                </button>
+                <button class="modal-btn">
+                    <div class="size">L</div>
+                    400ml
+                </button>
+            </div>
+                <p class="modal-text">Additives</p>
+
+                <div class="modal-btn-group">
+                    <button class="modal-btn">
+                        <div class="count">1</div> 
+                        Sugar
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">2</div>
+                        Cinnamon
+                    </button>
+                    <button class="modal-btn">
+                        <div class="count">3</div>
+                        Syrup
+                    </button>
+                </div>
+
+                <div class="total">
+                    <p class="total-text">Total:</p>
+                    <p class="total-text">$4.50</p>
+                </div>
+         
+   
+         <div class="modal-footer-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_268_12877)">
+                  <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_268_12877">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+         </div>
+       
+
+        <button class="modal-footer-btn" type="button">Order</button>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+    <!--six-->
+    <div class="modal fade" id="sixthModal" tabindex="-1" aria-labelledby="sixthModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+       
+          <div class="modal-body d-flex">
+            <div class="col-6  modal-img-column">
+              <img src="images/coffee-6.png" alt="" class="img-fluid modal-img">
+            </div>
+            <div class="col-6 modal-text-column">
+              <h2 class="modal-title">Latte</h2>
+              <p class="modal-text">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+              <p class="modal-text">Size</p>
+  
+              <div class="modal-btn-group">
+                  <button class="modal-btn modal-btn-active">
+                      <div class="size">S</div> 
+                      200ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">M</div>
+                      300ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">L</div>
+                      400ml
+                  </button>
+              </div>
+                  <p class="modal-text">Additives</p>
+  
+                  <div class="modal-btn-group">
+                      <button class="modal-btn">
+                          <div class="count">1</div> 
+                          Sugar
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">2</div>
+                          Cinnamon
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">3</div>
+                          Syrup
+                      </button>
+                  </div>
+  
+                  <div class="total">
+                      <p class="total-text">Total:</p>
+                      <p class="total-text">$5.50</p>
+                  </div>
+           
+     
+           <div class="modal-footer-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_268_12877)">
+                    <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_268_12877">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+  
+                <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+           </div>
+         
+  
+          <button class="modal-footer-btn" type="button">Order</button>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--seven-->
+    <div class="modal fade" id="sevenModal" tabindex="-1" aria-labelledby="sevenModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+       
+          <div class="modal-body d-flex">
+            <div class="col-6  modal-img-column">
+              <img src="images/coffee-7.png" alt="" class="img-fluid modal-img">
+            </div>
+            <div class="col-6 modal-text-column">
+              <h2 class="modal-title">Latte macchiato</h2>
+              <p class="modal-text">Espresso with frothed milk and chocolate</p>
+              <p class="modal-text">Size</p>
+  
+              <div class="modal-btn-group">
+                  <button class="modal-btn modal-btn-active">
+                      <div class="size">S</div> 
+                      200ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">M</div>
+                      300ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">L</div>
+                      400ml
+                  </button>
+              </div>
+                  <p class="modal-text">Additives</p>
+  
+                  <div class="modal-btn-group">
+                      <button class="modal-btn">
+                          <div class="count">1</div> 
+                          Sugar
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">2</div>
+                          Cinnamon
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">3</div>
+                          Syrup
+                      </button>
+                  </div>
+  
+                  <div class="total">
+                      <p class="total-text">Total:</p>
+                      <p class="total-text">$5.50</p>
+                  </div>
+           
+     
+           <div class="modal-footer-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_268_12877)">
+                    <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_268_12877">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+  
+                <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+           </div>
+         
+  
+          <button class="modal-footer-btn" type="button">Order</button>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--eight-->
+    <div class="modal fade" id="eightModal" tabindex="-1" aria-labelledby="eightModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+       
+          <div class="modal-body d-flex">
+            <div class="col-6  modal-img-column">
+              <img src="images/coffee-8.png" alt="" class="img-fluid modal-img">
+            </div>
+            <div class="col-6 modal-text-column">
+              <h2 class="modal-title">Coffee with cognac</h2>
+              <p class="modal-text">Fragrant black coffee with cognac and whipped cream</p>
+              <p class="modal-text">Size</p>
+  
+              <div class="modal-btn-group">
+                  <button class="modal-btn modal-btn-active">
+                      <div class="size">S</div> 
+                      200ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">M</div>
+                      300ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">L</div>
+                      400ml
+                  </button>
+              </div>
+                  <p class="modal-text">Additives</p>
+  
+                  <div class="modal-btn-group">
+                      <button class="modal-btn">
+                          <div class="count">1</div> 
+                          Sugar
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">2</div>
+                          Cinnamon
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">3</div>
+                          Syrup
+                      </button>
+                  </div>
+  
+                  <div class="total">
+                      <p class="total-text">Total:</p>
+                      <p class="total-text">$6.50</p>
+                  </div>
+           
+     
+           <div class="modal-footer-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_268_12877)">
+                    <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_268_12877">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+  
+                <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+           </div>
+         
+  
+          <button class="modal-footer-btn" type="button">Order</button>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--last-->
+    <div class="modal fade" id="lastModal" tabindex="-1" aria-labelledby="lastModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+       
+          <div class="modal-body d-flex">
+            <div class="col-6  modal-img-column">
+              <img src="images/coffee-9.jpg" alt="" class="img-fluid modal-img modal-img-last">
+            </div>
+            <div class="col-6 modal-text-column">
+              <h2 class="modal-title">Cappuccino</h2>
+              <p class="modal-text">Classic cappuccino</p>
+              <p class="modal-text">Size</p>
+  
+              <div class="modal-btn-group">
+                  <button class="modal-btn modal-btn-active">
+                      <div class="size">S</div> 
+                      200ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">M</div>
+                      300ml
+                  </button>
+                  <button class="modal-btn">
+                      <div class="size">L</div>
+                      400ml
+                  </button>
+              </div>
+                  <p class="modal-text">Additives</p>
+  
+                  <div class="modal-btn-group">
+                      <button class="modal-btn">
+                          <div class="count">1</div> 
+                          Sugar
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">2</div>
+                          Cinnamon
+                      </button>
+                      <button class="modal-btn">
+                          <div class="count">3</div>
+                          Syrup
+                      </button>
+                  </div>
+  
+                  <div class="total">
+                      <p class="total-text">Total:</p>
+                      <p class="total-text">$5.00</p>
+                  </div>
+           
+     
+           <div class="modal-footer-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_268_12877)">
+                    <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_268_12877">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+  
+                <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+           </div>
+         
+  
+          <button class="modal-footer-btn" type="button">Order</button>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+<!--Tea Modals -->
+<div class="modal fade" id="teaFirstModal" tabindex="-1" aria-labelledby="teaFirstModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/tea-1.png" alt="Tea" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Moroccan</h2>
+          <p class="modal-text">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$4.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="teaSecondModal" tabindex="-1" aria-labelledby="teaSecondModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/tea-2.png" alt="Tea" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Ginger</h2>
+          <p class="modal-text">Original black tea with fresh ginger, lemon and honey</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$5.00</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="teaThirdModal" tabindex="-1" aria-labelledby="teaThirdModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/tea-3.png" alt="Tea" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Cranberry</h2>
+          <p class="modal-text">Invigorating black tea with cranberry and honey</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$5.00</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="teaLastModal" tabindex="-1" aria-labelledby="teaLastModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/tea-4.png" alt="Tea" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Sea buckthorn</h2>
+          <p class="modal-text">Sea buckthorn</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$5.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Desert Modals -->
+<div class="modal fade" id="desertFirstModal" tabindex="-1" aria-labelledby="desertFirstModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-1.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Marble cheesecake</h2>
+          <p class="modal-text">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$3.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="desertSecondModal" tabindex="-1" aria-labelledby="desertSecondModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-2.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Red velvet</h2>
+          <p class="modal-text">Layer cake with cream cheese frosting</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$4.00</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="desertThirdModal" tabindex="-1" aria-labelledby="desertThirdModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-3.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Cheesecakes</h2>
+          <p class="modal-text">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$4.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="desertFourthModal" tabindex="-1" aria-labelledby="desertFourthModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-4.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Creme brulee</h2>
+          <p class="modal-text">Delicate creamy dessert in a caramel basket with wild berries</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$4.00</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="desertFifthModal" tabindex="-1" aria-labelledby="desertFifthModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-5.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Pancakes</h2>
+          <p class="modal-text">Tender pancakes with strawberry jam and fresh strawberries</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$4.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="desertSixthModal" tabindex="-1" aria-labelledby="desertSixthModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-6.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Honey cake</h2>
+          <p class="modal-text">Classic honey cake with delicate custard</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$4.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="desertSevenModal" tabindex="-1" aria-labelledby="desertSevenModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-7.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Chocolate cake</h2>
+          <p class="modal-text">Cake with hot chocolate filling and nuts with dried apricots</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$5.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="desertLastModal" tabindex="-1" aria-labelledby="desertLastModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+   
+      <div class="modal-body d-flex">
+        <div class="col-6  modal-img-column">
+          <img src="images/dessert-8.png" alt="Desert" class="img-fluid modal-img">
+        </div>
+        <div class="col-6 modal-text-column">
+          <h2 class="modal-title">Black forest</h2>
+          <p class="modal-text">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+          <p class="modal-text">Size</p>
+
+          <div class="modal-btn-group">
+              <button class="modal-btn modal-btn-active">
+                  <div class="size">S</div> 
+                  200ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">M</div>
+                  300ml
+              </button>
+              <button class="modal-btn">
+                  <div class="size">L</div>
+                  400ml
+              </button>
+          </div>
+              <p class="modal-text">Additives</p>
+
+              <div class="modal-btn-group">
+                  <button class="modal-btn">
+                      <div class="count">1</div> 
+                      Sugar
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">2</div>
+                      Cinnamon
+                  </button>
+                  <button class="modal-btn">
+                      <div class="count">3</div>
+                      Syrup
+                  </button>
+              </div>
+
+              <div class="total">
+                  <p class="total-text">Total:</p>
+                  <p class="total-text">$6.50</p>
+              </div>
+       
+ 
+       <div class="modal-footer-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_268_12877)">
+                <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_268_12877">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+       </div>
+     
+
+      <button class="modal-footer-btn" type="button">Order</button>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="container footer-container">
+      <div class="row footer-row">
+  
+        <div class="col-lg-7 col-sm-12">
+          <h2 class="footer-title">Sip, Savor, Smile.</h2>
+          <h2 class="footer-title-light">It’s coffee time!</h2>
+          <ul class="list-unstyled social-list">
+            <li class="social-list-item">
+                <a href="https://twitter.com/" target="_blank" class="social-list-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://www.instagram.com/" target="_blank" class="social-list-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="#E1D4C9"/>
+                  <path d="M17.5 6.51L17.51 6.49889" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://www.facebook.com/" target="_blank" class="social-list-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-5 col-sm-12 contact-us">
+          <h2 class="footer-second-title">Contact us</h2>
+          <ul class="list-unstyled contact-list">
+  
+            <li class="list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6663 8.33329C16.6663 12.0152 9.99967 18.3333 9.99967 18.3333C9.99967 18.3333 3.33301 12.0152 3.33301 8.33329C3.33301 4.65139 6.31778 1.66663 9.99967 1.66663C13.6816 1.66663 16.6663 4.65139 16.6663 8.33329Z" stroke="#E1D4C9" stroke-width="1.5"/>
+                <path d="M10.0003 9.16667C10.4606 9.16667 10.8337 8.79357 10.8337 8.33333C10.8337 7.8731 10.4606 7.5 10.0003 7.5C9.54009 7.5 9.16699 7.8731 9.16699 8.33333C9.16699 8.79357 9.54009 9.16667 10.0003 9.16667Z" fill="#E1D4C9" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              8558 Green Rd.,  LA
+            </li>
+  
+            <li class="list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M15.0984 12.2516L11.6665 12.9166C9.34845 11.7531 7.91654 10.4166 7.08321 8.33329L7.72483 4.89154L6.51197 1.66663L3.72946 1.66663C2.60191 1.66663 1.71466 2.59958 1.90108 3.71161C2.29888 6.08454 3.37231 10.0391 6.24987 12.9166C9.27338 15.9401 13.5661 17.3318 16.1378 17.9288C17.299 18.1983 18.3332 17.2908 18.3332 16.0988L18.3332 13.4843L15.0984 12.2516Z" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <a href="tel:+1 (603) 555-0123" class="list-item-link">+1 (603) 555-0123</a>
+            </li>
+  
+            <li class="list-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_217_1736)">
+                  <path d="M10 5L10 10L15 10" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.0003 18.3333C14.6027 18.3333 18.3337 14.6023 18.3337 9.99996C18.3337 5.39759 14.6027 1.66663 10.0003 1.66663C5.39795 1.66663 1.66699 5.39759 1.66699 9.99996C1.66699 14.6023 5.39795 18.3333 10.0003 18.3333Z" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_217_1736">
+                    <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+             Mon-Sat: 9:00 AM – 23:00 PM
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="go-top shadow rounded-circle py-3 sticky-bottom ms-auto me-2 ">
+    <a href="#header" class="go-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
+  </div>
+
+  <script>
+    let coffeeBtn=document.querySelector('.menu-coffee-btn');
+    let teaBtn=document.querySelector('.menu-tea-btn');
+    let dessertBtn=document.querySelector('.menu-dessert-btn');
+
+    let coffeeMenu=document.querySelector('.coffee-cards');
+    let teaMenu=document.querySelector('.tea-cards');
+    let dessertMenu=document.querySelector('.dessert-cards');
+
+
+    coffeeBtn.addEventListener('click',()=>{
+      coffeeBtn.classList.toggle('menu-btn-active');
+      teaBtn.classList.remove('menu-btn-active');
+      dessertBtn.classList.remove('menu-btn-active');
+      coffeeMenu.style.display='block';
+      teaMenu.style.display='none';
+      dessertMenu.style.display='none';
+    });
+
+    teaBtn.addEventListener('click',()=>{
+      teaBtn.classList.toggle('menu-btn-active');
+      coffeeBtn.classList.remove('menu-btn-active');
+      dessertBtn.classList.remove('menu-btn-active');
+      coffeeMenu.style.display='none';
+      teaMenu.style.display='block';
+      dessertMenu.style.display='none';
+    });
+
+    dessertBtn.addEventListener('click',()=>{
+      dessertBtn.classList.toggle('menu-btn-active');
+      coffeeBtn.classList.remove('menu-btn-active');
+      teaBtn.classList.remove('menu-btn-active');
+      coffeeMenu.style.display='none';
+      teaMenu.style.display='none';
+      dessertMenu.style.display='block';
+    });
+
+  </script>
+
+
+
+  <script>
+    let burgerMenu=document.querySelector('.burger-menu');
+    let closeButton=document.querySelector('.close-button');
+
+    burgerMenu.addEventListener('click', ()=>{
+        burgerMenu.style.display='none';
+        closeButton.style.display='block';
+    });
+
+    closeButton.addEventListener('click', ()=>{
+        burgerMenu.style.display='block';
+        closeButton.style.display='none';
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
