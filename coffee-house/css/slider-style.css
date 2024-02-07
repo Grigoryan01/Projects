@@ -1,0 +1,104 @@
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+background-color: #E1D4C9;;
+}
+.swiper {
+width: 100%;
+height: 100%;
+}
+.swiper-slide {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.swiper-slide img {
+display: block;
+object-fit: cover;
+}
+.swiper-slide img:hover{
+  cursor: pointer;
+}
+.swiper {
+margin-left: auto;
+margin-right: auto;
+}
+.swiper-text{
+  width: 480px;
+  margin-bottom: 50px;
+}
+.bold{
+  color: #403F3D;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; 
+}
+.light-text{
+  color: #403F3D;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin:  var(--swiper-pagination-bullet-horizontal-gap,4px);
+  border-radius: 100px;
+  background-color: #665F55;
+  width: 40px;
+  height: 4px;
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background-color: #403F3D !important;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  border:1px solid  #403F3D;;
+  transition:all .3s linear;
+  color: #403F3D;
+}   
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  font-family:Flaticon;
+  font-size:18px;
+}
+.swiper-button-next:after,
+.swiper-container-rtl
+.swiper-button-prev:after{
+  content:"\2192";
+}
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after{
+  content:"\2190";
+}
+@media screen and (max-width:576px){
+  .swiper-button-next,
+  .swiper-button-prev{
+      display: none;
+  }
+}
+@media screen and (max-width:480px){
+  .swiper-text{
+      width: 85%;
+      margin-bottom: 30px;
+  }
+}
