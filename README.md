@@ -3,6 +3,10 @@ https://grigoryan01.github.io/Projects/wintender/wintender.html
 
 https://grigoryan01.github.io/Projects/Kamod/home.html
 
+https://grigoryan01.github.io/Projects/kamod-russian/home-russian.html
+
+https://grigoryan01.github.io/Projects/kamod-english/home-english.html
+
 https://grigoryan01.github.io/Projects/coffee-house/coffee-house.html
 
 https://grigoryan01.github.io/Projects/Momentum/momentum.html
