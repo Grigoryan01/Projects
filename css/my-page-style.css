@@ -1,0 +1,122 @@
+:root{
+    --color-blue:#008da6;
+    --color-dark-blue:#005375;
+    --color-white:#FFFFFF;
+    --color-light:#f8f8f8;
+    --color-black:#000000;
+    --color-light-grey:#efefef;
+    --color-grey:#888686;
+    --color-light-grey:#535353;
+    --color-red:#fb1f00;
+    --color-green:#00761b;
+    --color-yellow:#f4c146;
+}
+.btn-search{
+    background-color: var(--color-white);
+    border: none;
+}
+
+.btn{
+    background-color: var(--color-dark-blue);
+    color:var(--color-white);
+}
+.btn:hover{
+    background-color: var(--color-yellow);
+    color:var(--color-white);
+}
+.tablet-form-input::placeholder{
+    color: var(--color-grey);
+}
+.profile-progress-badge-danger{
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+.profile-progress-badge-success{
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+.profile-progress-badge{
+    width: 50%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+td{
+    font-size:16px;
+    font-family:nunito,sans-serif;
+    font-weight:500;
+}
+.actives{
+    color:#000;
+    font-weight:600;
+    border-bottom: 3px solid var(--color-blue);
+}
+.profile-table table thead tr th {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 20px 25px;
+    background-color: var(--color-blue);
+}
+.profile-action-information{
+    margin-bottom:30px;
+}
+.profile-information-header{
+    text-align:center;
+}
+.profile-information-tab{
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:30px;
+    background-color:#f8f8f8;
+    display:inline-flex;
+    flex-wrap:wrap;
+}
+.profile-information-tab li{
+    list-style:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#a7a7a7;
+    position:relative;
+    font-size:18px;
+    font-family:nunito,sans-serif;
+    font-weight:500;
+    margin-right:35px;
+    transition:all .3s linear;
+    display:flex;
+    justify-content:center;
+}
+.profile-information-tab li:last-child{
+    margin-right:0;
+}
+.profile-information-tab li.actives{
+    color:#000;
+    font-weight:600;
+}
+.profile-information-tab li.actives:after{
+    background-color:#008da6;
+}
+.profile-information-tab li:hover{
+    color:#000;
+}
+.profile-information-tab li:hover:after{
+    background-color:#008da6;
+}
+.profile-information-tab.profile-information-tab-center{
+    justify-content:center;
+}
+
+.profile-table{
+    text-align: center;
+}
+.footer-social-list{
+    list-style-type: none;
+}
+.second-table,
+.third-table{
+    display: none;
+}
+.profile-progress-badge{
+    width: 100%;
+}

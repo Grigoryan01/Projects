@@ -1,0 +1,24 @@
+:root{
+    --color-blue:#008da6;
+    --color-dark-blue:#005375;
+    --color-white:#FFFFFF;
+    --color-light:#f8f8f8;
+    --color-black:#000000;
+    --color-light-grey:#efefef;
+    --color-grey:#888686;
+    --color-light-grey:#535353;
+    --color-red:#be3137;
+    --color-yellow:#f4c146;
+}
+.terms-policy-section{
+    padding-block: 100px;
+}
+.text-details-content{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+}
+.tablet-form-input::placeholder{
+    color: var(--color-grey);
+}

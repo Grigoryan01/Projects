@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Page og programming courses">
+    <meta name="keywords" content="courses,programming,IT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Wintender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+
+    <link href="css/main-style.css" type="text/css" rel="stylesheet">
+    <link href="css/contact-style.css" type="text/css" rel="stylesheet">
+    <link href="images/education.png" type="image/x-icon" rel="icon">
+</head>
+
+  <body>
+   
+
+    <nav class="navbar navbar-expand-xl fixed-top main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="wintender.html" target="_blank">
+            <img src="images/logo.png" alt="Logo" class="img-fluid">
+          </a>
+          <div class="vr"></div>
+       
+          <div class="input-group main-navbar-input-group d-flex align-items-center">
+            <span class="input-group-text main-navbar-input-group-text" id="basic-addon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#535353" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </span>
+            <input type="text" class="form-control  main-navbar-form-input" placeholder="Որոնում..." aria-label="search" aria-describedby="basic-addon">
+        </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="about.html" target="_blank">ՄԵՐ ՄԱՍԻՆ</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link main-nav-link" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 ԴԱՍԸՆԹԱՑՆԵՐ 
+
+                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+
+                </a>
+                <ul class="dropdown-menu rounded-0 main-dropdown-menu">
+                  <li><a class="dropdown-item nested-dropdown-item" href="online-course.html" target="_blank">Օնլայն դասընթացներ</a></li>
+                  <li><a class="dropdown-item nested-dropdown-item" href="#" target="_blank">Հիբրիդ դասընթացներ</a></li>
+                  <li><a class="dropdown-item nested-dropdown-item" href="ofline-course.html" target="_blank">Օֆլայն դասընթացներ</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="news.html" target="_blank">ՆՈՐՈՒԹՅՈՒՆՆԵՐ/ԲԼՈԳ</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="contact.html" target="_blank">ՀԵՏԱԴԱՐՁ ԿԱՊ</a>
+              </li>
+            </ul>
+            <form class="d-flex align-items-center">
+                <div class="dropdown me-3">
+                <button class="nav-link d-flex align-items-center" type="button" id="language3" data-bs-toggle="dropdown"  aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-europe-africa me-1" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.809.809 0 0 1 1.034-.275.809.809 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34c.078.028.16.044.243.054.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.333.333 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501Z"/>
+                      </svg>
+                    <span class="lang-name">Հայերեն</span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down ms-1" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="language3"> 
+                    <a class="dropdown-item" href="wintender-english/contact-en.html" target="_blank">
+                        <img src="images/russia.png" alt="flag" class="language-flag">
+                        <span class="choose-lang-name">Russian</span>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                        <img src="images/armenia.png" alt="flag" class="language-flag">
+                        <span class="choose-lang-name">Armenian</span>
+                    </a>
+
+                    <a class="dropdown-item" href="wintender-russian/contact-ru.html" target="_blank">
+                        <img src="images/english.png" alt="flag" class="language-flag">
+                        <span class="choose-lang-name">English</span>
+                    </a>
+
+                </div>
+                </div>
+                <a href="#" class="btn main-btn text-nowrap">Մուտք/ Գրանցում</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <nav class="navbar tablet-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="wintender.html" target="_blank">
+            <img src="images/logo-3-white.png" alt="Logo" class="img-fluid">
+          </a>
+          
+
+    <div class="tablet-menu ms-auto">
+
+          <div class="dropdown">
+            <button class="nav-link-button" id="language3" data-bs-toggle="dropdown"  aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.809.809 0 0 1 1.034-.275.809.809 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34c.078.028.16.044.243.054.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.333.333 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501Z"/>
+                  </svg>
+                <span class="tablet-lang-name">Հայերեն</span> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"  class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="language3"> 
+                <a class="dropdown-item language-dropdown-item" href="wintender-russian/contact-ru.html" target="_blank">
+                    <img src="images/russia.png" alt="flag" class="language-flag">
+                    <span class="choose-lang-name">Russian</span>
+                </a>
+
+                <a class="dropdown-item language-dropdown-item" href="#">
+                    <img src="images/armenia.png" alt="flag" class="language-flag">
+                    <span class="choose-lang-name">Armenian</span>
+                </a>
+
+                <a class="dropdown-item language-dropdown-item" href="wintender-english/contact-en.html" target="_blank">
+                    <img src="images/english.png" alt="flag" class="language-flag">
+                    <span class="choose-lang-name">English</span>
+                </a>
+
+            </div>
+            </div>
+
+
+
+            <div class="dropdown">
+                <button class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#535353" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">
+                    <div class="tablet-input-group d-flex align-items-center nowrap">
+                        <span class="tablet-input-group-text" id="basic-addon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control tablet-form-input" placeholder="Որոնում..." aria-label="search" aria-describedby="basic-addon">
+                    </div>
+                  </a></li>
+                  
+                
+                </ul>
+              </div>
+        </div>
+
+          <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#005375" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#005375" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+          </button>
+          <div class="collapse navbar-collapse tablet-navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <hr>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="about.html" target="_blank">ՄԵՐ ՄԱՍԻՆ</a>
+              </li>
+              <hr>
+              <li class="nav-item dropdown">
+                <a class="nav-link tablet-nav-link d-flex justify-content-between ms-3" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 ԴԱՍԸՆԹԱՑՆԵՐ 
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+
+                </a>
+                <ul class="dropdown-menu border-0">
+
+                  <li><a class="dropdown-item ms-5 nested-dropdown-item" href="online-course.html" target="_blank">Օնլայն դասընթացներ</a></li>
+                  <hr>
+                  <li><a class="dropdown-item ms-5 nested-dropdown-item" href="#" target="_blank">Հիբրիդ դասընթացներ</a></li>
+                  <hr>
+                  <li><a class="dropdown-item ms-5 nested-dropdown-item" href="ofline-course.html" target="_blank">Օֆլայն դասընթացներ</a></li>
+                  
+                </ul>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="news.html" target="_blank">ՆՈՐՈՒԹՅՈՒՆՆԵՐ/ԲԼՈԳ</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="contact.html" target="_blank">ՀԵՏԱԴԱՐՁ ԿԱՊ</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+
+ <!--phone menu-->
+ <nav class="navbar mobile-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="wintender.html" target="_blank">
+        <img src="images/logo-3-white.png" alt="Logo" class="img-fluid">
+      </a>
+      
+
+<div class="mobile-menu ms-auto me-3">
+
+
+    <div class="dropdown">
+        <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">
+
+            <div class="btn-group">
+                <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.809.809 0 0 1 1.034-.275.809.809 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34c.078.028.16.044.243.054.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.333.333 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501Z"/>
+                      </svg> 
+                      Հայերեն
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">
+                    <img src="images/russia.png" alt="flag" class="language-flag">
+                    <span class="choose-lang-name">Russian</span>
+                  </button></li>
+                  <li><button class="dropdown-item" type="button">
+                    <img src="images/armenia.png" alt="flag" class="language-flag">
+                    <span class="choose-lang-name">Armenian</span>
+                  </button></li>
+                  <li><button class="dropdown-item" type="button">
+                    <img src="images/english.png" alt="flag" class="language-flag">
+                    <span class="choose-lang-name">English</span>
+                  </button></li>
+                </ul>
+              </div>
+
+          </a></li>
+
+          <li><a class="dropdown-item" href="#">
+
+            <div class="btn-group">
+                <button type="button" class="btn mobile-btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">
+                    <div class="mobile-input-group d-flex align-items-center nowrap">
+                        <span class="mobile-input-group-text" id="basic-addon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#535353" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control mobile-form-input" placeholder="Որոնում..."  aria-label="search" aria-describedby="basic-addon">
+                    </div>
+                  </button></li>
+            
+                </ul>
+              </div>
+          </a></li>
+      
+        </ul>
+      </div>
+
+    </div>
+
+      <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#005375" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#005375" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+      </button>
+      <div class="collapse navbar-collapse mobile-navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <hr>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="about.html" target="_blank">ՄԵՐ ՄԱՍԻՆ</a>
+          </li>
+          <hr>
+          <li class="nav-item dropdown">
+            <a class="nav-link mobile-nav-link d-flex justify-content-between ms-3" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             ԴԱՍԸՆԹԱՑՆԵՐ 
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+            </svg>
+
+            </a>
+            <ul class="dropdown-menu border-0">
+
+              <li><a class="dropdown-item ms-5 nested-dropdown-item" href="online-course.html" target="_blank">Օնլայն դասընթացներ</a></li>
+              <hr>
+              <li><a class="dropdown-item ms-5 nested-dropdown-item" href="#" target="_blank">Հիբրիդ դասընթացներ</a></li>
+              <hr>
+              <li><a class="dropdown-item ms-5 nested-dropdown-item" href="ofline-course.html" target="_blank">Օֆլայն դասընթացներ</a></li>
+              
+            </ul>
+          </li>
+          <hr>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="news.html" target="_blank">ՆՈՐՈՒԹՅՈՒՆՆԵՐ/ԲԼՈԳ</a>
+          </li>
+          <hr>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="contact.html" target="_blank">ՀԵՏԱԴԱՐՁ ԿԱՊ</a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+
+
+      <header class="header-page">
+        <div class="header-page-shape header-page-shape-middle">
+            <img src="images/shapes/circle-dot-shape.png" alt="shape">
+        </div>
+
+        <div class="container">
+            <div class="header-page-content">
+                <h1 class="fw-bold">Կապ մեզ հետ</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="wintender.html" class="breadcrumb-link" target="_blank">Գլխավոր</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Հետադարձ կապ</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-information-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 pb-30">
+                    <div class="contact-information-item">
+                        <div class="section-title text-start">
+                            <h1 class="fw-bold text-dark mb-5"><span class="section-title-span ">Wintender-ի</span> կոնտակտային տվյալները</h1>
+                        </div>
+
+                        <div class="contact-options">
+                            <div class="contact-option-item">
+                                <div class="contact-option-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
+                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                      </svg>
+                                </div>
+                                    <div class="contact-option-details my-2">
+                                        <p>Հեռախոսահամար: <a href="tel:099-008-113">099 008 113</a></p>
+                                        <p>Հեռախոսահամար: <a href="tel:099-008-113">099 008 113</a></p>
+                                        <p>Էլ.հասցե: <a href="mailto:info@wintender.am"><span>info@wintender.am</span></a></p>
+                                    </div>
+                            </div>
+
+                            <div class="contact-option-item">
+                                <div class="contact-option-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color:#008da6;" class="bi bi-globe me-2" viewBox="0 0 16 16">
+                                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                      </svg>
+                                </div>
+                                    <div class="contact-option-details mb-2">
+                                        <p>Դավիթ Անհաղթի 23/10,<br> ք. Երևան, ՀՀ</p>
+                                    </div>
+                            </div>
+
+                            <div class="contact-option-item">
+                                <div class="contact-option-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clock-history me-2" viewBox="0 0 16 16">
+                                        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                                        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                                      </svg>
+                                </div>
+                                    <div class="contact-option-details ">
+                                        <p>Երկուշաբթի-Ուրբաթ: <span>09:00  - 18:00 </span></p>
+                                        <p>Շաբաթ-Կիրակի: <span>Փակ</span></p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-7 pb-30">
+                    <div class="contact-information-item">
+                         <div class="contact-information-image">
+                            <img src="images/contact-me-image.jpg" alt="contact" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-box">
+                <div class="sub-section-title text-center">
+                    <h3 class="sub-section-title-heading fw-bold mb-4">Թողնել հաղորդագրություն</h3>
+                    <p class="text-secondary mb-5">Եթե ունեք հարցեր կամ առաջարկություններ,կարող եք գրել մեզ նամակ</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    </div>
+                                    <input type="text" name="name" id="name" class="form-control py-3" placeholder="Անուն Ազգանուն*" required/>
+                                </div>
+                                 <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    </div>
+                                    <input type="email" name="email" id="email" class="form-control py-3" placeholder="Էլ.հասցե*" required/>
+                                </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="bi bi-telephone-inbound"></i></span>
+                                    </div>
+                                        <input type="text" name="phone" id="phone" class="form-control py-3" placeholder="Հեռախոսահամար*" required/>
+                                </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="bi bi-journal-bookmark"></i></span>
+                                    </div>
+                                    <input type="text" name="subject" id="subject" class="form-control py-3" placeholder="Թեմա*" required/>
+                                </div>
+                                    <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text second"><i class="bi bi-envelope mt-2"></i></span>
+                                    </div>
+                                    <textarea name="message" class="form-control py-3" id="message" rows="6" placeholder="Ձեր հաղորդագրությունը*"></textarea>
+                                </div>
+                            </div>
+                        </div>
+  
+            <div class="col-12 col-md-12 col-lg-12 text-center">
+                <button class="btn main-btn send text-uppercase text-nowrap p-3 my-3" type="submit">Ուղարկել հաղորդագրություն</button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</section>
+
+ 
+<div class="map-section">
+    <div class="map-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509916.957423575!2d-123.79759793610344!3d37.18430344877116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sbd!4v1607552912782!5m2!1sen!2sbd"></iframe>
+    </div>
+</div>
+
+
+<section class="become-section pb-100 d-flex align-items-end">
+    <div class="container">
+        <div class="bg-main become-section-box">
+            <div class="become-section-shapes ">
+                <div class="become-section-shape-item position-relative">
+                    <img src="images/shapes/become-section-curve-line.png" alt="shape" class="curve-img">
+                </div>
+            </div>
+
+            <div class="become-animate-items position-relative">
+                <div class="become-animate-item animation-tab-none">
+                    <img src="images/shapes/animate-shape-2.png" alt="shape" class="become-animate-item-img">
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-end">
+                <div class="col-12 col-lg-5 pb-50 mobile">
+                    <div class="section-title">
+                        <h2>Դարձիր ուսանող</h2>
+                        
+                            <div class="become-section-shape">
+                                <img src="images/shapes/section-title-shape.png" alt="shape" class="become-section-shape-img">
+                            </div>
+                       
+                        <p class="section-title-text">Հայտնի է, որ ընթերցողը կարդալով հասկանալի տեքստ, չի կարողանա կենտրոնանալ տեքստի ձևավորման վրա:</p>
+                    </div> 
+
+                    <div class="section-button-group mb-5">
+                        <div class="section-button-item">
+                            <a href="courses.html" class="btn main-btn p-3 btn-white text-uppercase">Դասընթացներ  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen ms-1" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                  </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 offset-lg-1">
+                    <div class="image-position">
+                        <img src="images/header-screenshot.png" alt="screenshot"  class="img-fluid image-position-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-upper pt-100 pb-80">
+        <div class="container">
+             <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                     <div class="footer-content-item">
+                            <div class="footer-logo">
+                                <a href="wintender.html"><img src="images/logo-3-white.png" alt="Logo"></a>
+                            </div>
+                            <div class="footer-details footer-address-info">
+                                <div class="footer-address-info-item">
+                                    <h4 class="fw-bold">Կապ մեզ հետ</h4>
+                                    <p class="footer-contact-number"><a href="tel:099-008-113">099-008-113</a><span> կամ </span><a href="tel:099-008-113">099-008-113 </a></p>
+                                </div>
+                                <div class="footer-address-info-item">
+                                    <p class="footer-email"><a href="mailto:info@wintender.am"><span class="__cf_email__" >info@wintender.am</span></a></p>
+                                </div>
+                                <div class="footer-address-info-item">
+                                    <p class="footer-availability"><span>09:00 - 18:00</span>, Երկուշաբթի - Ուրբաթ</p>
+                                </div>
+                                <div class="footer-address-info-item">
+                                    <p class="footer-physical-address"> Դավիթ Անհաղթ 23, ք. Երևան, ՀՀ</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-9">
+                    <div class="footer-right pl-80">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="footer-content-list footer-content-item">
+                                    <div class="footer-content-title">
+                                        <h4 class="fw-bold">Հղումներ</h4>
+                                    </div>
+                                        <ul class="footer-details footer-list list-unstyled">
+                                            <li>
+                                                
+                                                <a href="about.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                 Մեր մասին</a>
+                                            </li>
+  
+                                            <li>
+                                                
+                                                <a href="register.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                Մուտք/գրանցում</a>
+                                            </li>
+  
+                                            <li>
+                                               
+                                                <a href="news.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                Նորություններ/բլոգ</a>
+                                            </li>
+  
+                                            <li>
+                                                
+                                                <a href="contact.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                Հետադարձ կապ</a>
+                                            </li>
+  
+                                            <li>
+                                                
+                                                <a href="faqs.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                ՀՏՀ-ներ</a>
+                                            </li>
+  
+                                            <li>
+                                                
+                                                <a href="privacy.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i> 
+                                                Գաղտնիության քաղաքականություն</a>
+                                            </li>
+  
+                                            <li>
+                                                
+                                                <a href="privacy.html" target="_blank" class="footer-list-link">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                Օգտագործման պայմաններ</a>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h4 class="fw-bold">Դասընթացներ</h4>
+                                            </div>
+                                                <ul class="footer-details footer-list list-unstyled">
+  
+                                                    <li>
+                                                        
+                                                        <a href="online-course.html" target="_blank" class="footer-list-link">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                        Օնլայն</a>
+                                                    </li>
+  
+                                                    <li>
+                                                       
+                                                        <a href="#" class="footer-list-link">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                        Հիբրիդ</a>
+                                                    </li>
+  
+                                                    <li>
+                                                        
+                                                        <a href="ofline-course.html"  target="_blank" class="footer-list-link">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                        Օֆլայն</a>
+                                                    </li>
+  
+                                                </ul>
+                                        </div>
+                                    </div>
+  
+  
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="footer-content-list footer-content-item desk-pad-left-30">
+                                        <div class="footer-content-title">
+                                            <h4 class="fw-bold">Բաժանորդագրվել լրատուին</h4>
+                                         </div>
+                                        <div class="footer-details">
+                                            <p>Շատ համակարգչային տպագրական ծրագրեր և ինտերնետային էջերի խմբագրիչներ այն օգտագործում են որպես իրենց ստանդարտ տեքստային մոդել </p>
+                                            <div class="footer-newsletter-form">
+                                                <form class="newsletter-form needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <div class="input-group rounded has-validation footer-input-group">
+                                                            <input type="text" placeholder="Քո էլ. հասցեն" class="form-control border-0" id="emails" name="EMAIL" required autocomplete="off">
+                                                            <button class="btn main-btn footer-btn my-2 me-1" type="submit">Բաժանորդագրվել</button>
+                                                            <div class="invalid-feedback">
+                                                              Please enter  your email correctly.
+                                                          </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+       <div class="footer-lower position-relative">
+            
+            <div class="background-shapes">
+                <div class="background-shape-item">
+                    <img src="images/shapes/curved-line.png" alt="line" class="footer-background-shape-img">
+                </div>
+  
+                <div class="background-shape-item">
+                    <img src="images/shapes/half-circle-shape.png" alt="line" class="footer-background-shape-circle">
+                </div>
+  
+               <div class="background-shape-item">
+                    <img src="images/shapes/animate-shape-1.png" alt="line" class="footer-background-shape-scale">
+                </div>
+            </div>
+            
+       
+  
+   <div class="container">
+      <div class="footer-lower-grid">
+  
+        <div class="footer-lower-item">
+            <div class="footer-copyright-text">
+                <p>Wintender @ <script>document.write(new Date().getFullYear())</script> Դիզայն և ծրագրավորում 
+                    <a href="https://voodoo.pro/" target="_blank" class="footer-copyright-link text-nowrap">VooDoo programming</a>
+                </p>
+            </div>
+        </div>
+  
+        
+        <div class="footer-lower-item">
+      
+          <ul class="footer-social-list list-unstyled">
+              <li>
+                  <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="social"></a>
+              </li>
+  
+              <li>
+                  <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="social"></a>
+              </li>
+  
+              <li>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="social"></a>
+              </li>
+  
+              <li>
+                  <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="social"></a>
+              </li>
+          
+          </ul>
+      </div>
+  </div>
+    </div>
+  </div>
+       </div>
+  
+  </footer>
+  
+  <script>
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+    }
+  
+    form.classList.add('was-validated')
+    }, false)
+    })
+  
+  </script>
+  <script>
+    let button=document.querySelector('.footer-btn');
+    let footerForm=document.querySelector('.footer-input-group');
+    button.addEventListener('click',()=>{
+      footerForm.classList.add('shake');
+  
+    })
+  </script>
+
+      <script>
+        let menu=document.querySelector('.bi-list');
+        let closeButton=document.querySelector('.bi-x');
+
+        menu.addEventListener('click',()=>{
+            menu.classList.add('active');
+            menu.style.display="none";
+            closeButton.style.display='block';
+        });
+
+        closeButton.addEventListener('click',()=>{
+            menu.style.display="block";
+            closeButton.style.display='none';
+        });
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
