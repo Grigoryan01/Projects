@@ -1,0 +1,92 @@
+:root{
+    --color-blue:#008da6;
+    --color-dark-blue:#005375;
+    --color-white:#FFFFFF;
+    --color-light:#f8f8f8;
+    --color-black:#000000;
+    --color-light-grey:#efefef;
+    --color-grey:#888686;
+    --color-light-grey:#535353;
+    --color-red:#be3137;
+    --color-yellow:#f4c146;
+}
+.summery-info-details{
+    padding: 30px;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.summery-box{
+    padding: 30px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.input-group{
+    background-color: var(--color-light);
+}
+.form-control{
+    background-color: var(--color-light);
+    border: none;
+    border-radius: 0;
+
+}
+.input-group-text{
+    height: 100%;
+    border: none;
+    background-color: var(--color-light);
+}
+.form-group input{
+    border: none;
+    background-color: var(--color-light);
+}
+.form-control:focus {
+    outline: 0;
+    background-color: var(--color-light);
+    box-shadow:none !important;
+}
+.navbar-form-input{
+    background-color: var(--color-light);
+    border: none;
+}
+.navbar-form-input:focus,
+.navbar-form-input:active{
+    background-color: var(--color-light);
+    border: none;
+}
+.btn-secondcolor{
+    background-color: var(--color-red);
+}
+.full-width{
+    width: 100%;
+}
+.summery-list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.summery-option>a{
+    text-decoration: none;
+    -webkit-transition:all .3s linear;
+    transition:all .3s linear;
+    color: var(--color-black);
+}
+.summery-option>a:hover{
+    color:var(--color-yellow);
+}
+@media screen and (max-width:428px){
+    .account-setting-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

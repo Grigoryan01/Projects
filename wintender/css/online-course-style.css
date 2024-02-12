@@ -1,0 +1,50 @@
+:root{
+    --color-blue:#008da6;
+    --color-dark-blue:#005375;
+    --color-white:#FFFFFF;
+    --color-light:#f8f8f8;
+    --color-black:#000000;
+    --color-light-grey:#efefef;
+    --color-grey:#888686;
+    --color-red:#be3137;
+    --color-yellow:#f4c146;
+}
+
+.main-navbar-form-input::placeholder{
+    color: var(--color-grey);
+}
+.tablet-form-input::placeholder{
+    color: var(--color-grey);
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.course-section{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.course-card-content a{
+    text-decoration: none;
+    -webkit-transition:all .3s linear;
+    transition:all .3s linear;
+    color: var(--color-black);
+}
+.course-card-content a:hover{
+    color: var(--color-blue);
+}
+.course-card-content{
+    padding-block: 20px;
+    text-align: center;
+    background-color: var(--color-light-grey);
+}   
+.course-card:hover{
+    transform:translateY(-10px);
+    transition: all .5s ease-in-out;
+}
+.course-card:hover .course-card-thumb img{
+    transform:scale(1.05);
+}
+.course-card:hover .course-card-content{
+    box-shadow:0 11px 61.1px 3.9px rgba(34,34,34,.09);
+    background-color:var(--color-white);
+}
