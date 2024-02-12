@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAMOD | Կատեգորիաներ</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/category-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <style>
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'  fill='black' class='bi bi-dash-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/></svg>");
+    }
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'  fill='currentColor'  class='bi bi-plus-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>");
+    }
+    .accordion-button:not(.collapsed) {
+        border-radius: 0;
+        border-bottom:1px solid #161616;
+        outline: 0;
+        background-color: #ffffff;
+        color: #000;
+    }
+    /* change color of collapsed class */
+    .collapsed { 
+        border-radius: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .accordion-button:focus {
+        border-color: #000000;
+        outline: 0;
+        box-shadow: none;
+    }
+</style>
+  </head>
+
+  <body>
+
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="header-top">
+                        <div class="header-top-left">
+                            
+                            <a class="phone-number d-none d-sm-block" href="tel:+374 44 20 80 20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                  </svg>
+                                  +374 44 20 80 20</a>
+                            <ul class="languages list-unstyled m-0">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/flag_arm.png" alt="Armenian">
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="kamod-russian/category-russian.html" target="_blank">
+                                        <img src="images/flag_rus.png" alt="Russian">
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="kamod-english/categories-english.html" target="_blank">
+                                        <img src="images/flag_eng.png" alt="English">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="header-top-right">
+                        <ul class="header-social-links list-unstyled d-flex m-0">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005c66" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005c66" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    
+    
+            <div class="row menu-row">
+                <div class="menu">
+                <nav class="navbar navbar-expand-lg" style="position: static;">
+                      <a class="navbar-brand" href="home.html">
+                        <img src="images/header-logo.png" alt="Logo" class="img-fluid navbar-brand-img">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                          <li class="nav-item main-link">
+                            <a class="nav-link" href="category.html" target="_blank">Կատեգորիաներ</a>
+                            <div class="submenu">
+                                <div class="ps-2">
+                                    <h3>Կատեգորիաներ</h3>
+                                    <ul class="category-list list-unstyled m-0">
+                                        <li class="category-list-item">
+                                            <a href="#" class="category-link">Խոհանոցային կահույք </a>
+                                        </li>
+                        
+                                        <li class="category-list-item">
+                                            <a href="#" class="category-link"> Հյուրասենյակի կահույք </a>
+                                        </li>
+                        
+                                        <li class="category-list-item">
+                                            <a href="#" class="category-link">Ննջասենյակի կահույք </a>
+                                        </li>
+                        
+                                        <li class="category-list-item">
+                                            <a href="#" class="category-link">Մանկական կահույք </a>
+                                        </li>
+                         
+                                        <li class="category-list-item">
+                                            <a href="#"class="category-link"> Գրասենյակային կահույք </a>
+                                        </li>
+                        
+                                        <li class="category-list-item">
+                                            <a href="#" class="category-link">Նախասրահ </a>
+                                        </li>
+                        
+                                    </ul>
+                            </div>
+                        
+                        
+                                <div class="category-prod-list">
+                                    <div class="category-prod-list-item">
+                                        <img src="images/3menu-img2.png" alt="" class="img-fluid"> 
+                                            <a href="https://kamod.am/hy/category/khohanotsayin-kahuyk" class="btn-black">Գնել Հիմա </a>
+                                    </div>
+                        
+                                    <div class="category-prod-list-item">
+                                        <img src="images/3menu-img1.png" alt="" class="img-fluid"> 
+                                            <a href="https://kamod.am/hy/category/drner" class="btn-black">Գնել Հիմա </a> 
+                                    </div>
+                                </div>
+                        </div>
+                        </li>
+    
+                          <li class="nav-item">
+                            <a class="nav-link" href="projects.html" target="_blank">Աշխատանքներ</a>
+                          </li>
+                         
+                          <li class="nav-item">
+                            <a class="nav-link" href="category-products.html" target="_blank">Ապրանքներ</a>
+                          </li>
+    
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html" target="_blank">Մեր մասին</a>
+                          </li>
+    
+                          <li class="nav-item">
+                            <a class="nav-link" href="blog.html" target="_blank">Բլոգ</a>
+                          </li>
+    
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html" target="_blank">Կոնտակներ</a>
+                          </li>
+                       
+                        </ul>
+                     
+                      </div>
+                </nav>
+                
+    
+            <div class="d-flex align-items-center">
+                         <!--search-->
+                            <button class="search-btn" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        
+                            <div class="input">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                </span>
+                                <input type="text" class="form-control seacrh-form-control" placeholder="Որոնել այստեղ...">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg close" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+    
+                                <div class="offcanvas-button">
+                                    <!--offcanvas-->
+                                            <button class="btn offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                            </svg>
+                                            </button>
+    
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                                <img src="images/rightbar-logo.png" alt="Logo" class="img-fluid offcanvas-logo d-block mx-auto">
+                                                </h5>
+                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+    
+                                            <div class="offcanvas-body">
+                                                <div>
+                                                    <p class="offcanvas-text">Կահույքը որոշում է Ձեր կյանքի դասավորվածությունը...</p>
+                                                    <img src="images/1home-work6.png" alt="furniture" class="img-fluid ">
+                                                    <h5 class="offcanvas-body-title text-nowrap">Պատվիրիր հայկականը</h5>
+                                                    <p class="offcanvas-body-text">Դուք սկսում եք երազել, իսկ ԿԱՄՈԴԸ՝ <br>իրականացնում դրանք:</p>
+    
+                                                    <ul class="list-unstyled info-list">
+                                                        <li class="info-list-item ">
+                                                        <a href="tel:+374 44 508 050" class="info-list-link d-flex align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                                            </svg>
+                                                            +374 44 508 050</a>
+                                                        </li>
+                                                        
+                                                        <li class="list-item">
+                                                        <a href="mailto:info@kamod.am" class="info-list-link d-flex align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
+                                                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                            </svg>
+                                                            info@kamod.am</a>
+                                                        </li>
+                                                    
+                                                        <li class="list-item">
+                                                        <a href="#" class="info-list-link d-flex align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telegram me-2" viewBox="0 0 16 16">
+                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                                            </svg>
+                                                            2-րդ արդյունաբերական գոտի, 20 շինություն, Կոտայք Աբովյան, 2201</a>
+                                                        </li>
+                                                    </ul>
+    
+    
+                                                    <ul class="social-links list-unstyled">
+                                                        <li>
+                                                            <a href="https://www.facebook.com/" target="_blank">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/" target="_blank">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+                <div class="row mobile-menu-row">
+                    <!--<div class="mobile-menu w-100">-->
+                            <nav class="navbar navbar-expand-lg w-100">
+                                <a class="navbar-brand" href="home.html" target="_blank">
+                                    <img src="images/header-logo.png" alt="Logo" class="img-fluid navbar-brand-img">
+                                </a>
+                                
+                                <div class="d-flex align-items-center ms-auto">
+                                    <!--search-->
+                                    <button class="mobile-search-btn" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </button>
+                                
+                                    <div class="mobile-input">
+                                        <div class="input-group mobile-input-group">
+                                            <span class="input-group-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+                                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                    </svg>
+                                            </span>
+                                            <input type="text" class="form-control seacrh-form-control" placeholder="Որոնել այստեղ...">
+                                            <span class="input-group-text">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg mobile-close" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                    
+                                        <div class="mobile-offcanvas-button">
+                                            <!--offcanvas-->
+                                                    <button class="btn offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvasExample" aria-controls="offcanvasExample">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                                        </svg>
+                                                    </button>
+                    
+                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                                    <div class="offcanvas-header">
+                                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                                        <img src="images/rightbar-logo.png" alt="Logo" class="img-fluid offcanvas-logo d-block mx-auto">
+                                                        </h5>
+                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                    </div>
+                    
+                                                    <div class="offcanvas-body">
+                                                        <div>
+                                                            <p class="offcanvas-text">Կահույքը որոշում է Ձեր կյանքի դասավորվածությունը...</p>
+                                                            <img src="images/1home-work6.png" alt="furniture" class="img-fluid ">
+                                                            <h5 class="offcanvas-body-title text-nowrap">Պատվիրիր հայկականը</h5>
+                                                            <p class="offcanvas-body-text">Դուք սկսում եք երազել, իսկ ԿԱՄՈԴԸ՝ <br>իրականացնում դրանք:</p>
+                    
+                                                            <ul class="list-unstyled info-list">
+                                                                <li class="info-list-item ">
+                                                                <a href="tel:+374 44 508 050" class="info-list-link d-flex align-items-center">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
+                                                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                                                      </svg>
+                                                                    +374 44 508 050</a>
+                                                                </li>
+                                                                
+                                                                <li class="list-item">
+                                                                <a href="mailto:info@kamod.am" class="info-list-link d-flex align-items-center">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
+                                                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                                    </svg>
+                                                                    info@kamod.am</a>
+                                                                </li>
+                                                            
+                                                                <li class="list-item">
+                                                                <a href="#" class="info-list-link d-flex align-items-center">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telegram me-2" viewBox="0 0 16 16">
+                                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                                                    </svg>
+                                                                    2-րդ արդյունաբերական գոտի, 20 շինություն, Կոտայք Աբովյան, 2201</a>
+                                                                </li>
+                                                            </ul>
+                    
+                    
+                                                            <ul class="social-links list-unstyled m-0">
+                                                                <li>
+                                                                    <a href="https://www.facebook.com/" target="_blank">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                    <li>
+                                                                        <a href="https://www.instagram.com/" target="_blank">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                            </div>
+    
+                                  
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                      <button type="button" class="btn-close mobile-second-btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                      
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="category.html" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Կատեգորիաներ
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="category-details.html" target="_blank">Խոհանոցի կահույք</a></li>
+                                            <li><a class="dropdown-item" href="#">Հյուրասենյակի կահույք</a></li>
+                                            <li><a class="dropdown-item" href="#">Ննջասենյակի կահույք</a></li>
+                                            <li><a class="dropdown-item" href="#">Մանկական կահույք</a></li>
+                                            <li><a class="dropdown-item" href="#">Գրասենյակի կահույք</a></li>
+                                            <li><a class="dropdown-item" href="#">Նախասրահ</a></li>
+    
+    
+    
+                                             <!-- Swiper -->
+                                                    <div class="swiper menuSwiper">
+                                                        <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="category-prod-list-item">
+                                                                <img src="images/3menu-img1.png" alt="" class="img-fluid"> 
+                                                                    <a href="#" class="btn-black">Գնել Հիմա </a>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="swiper-slide">
+                                                            <div class="category-prod-list-item">
+                                                                <img src="images/3menu-img2.png" alt="" class="img-fluid"> 
+                                                                    <a href="#" class="btn-black">Գնել Հիմա </a> 
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                          </ul>
+                                        </li>
+    
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="projects.html" target="_blank">Աշխատանքներ</a>
+                                          </li>
+    
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="category-products.html" target="_blank">Ապրանքներ</a>
+                                          </li>
+    
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="about.html" target="_blank">Մեր մասին</a>
+                                          </li>
+    
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="blog.html" target="_blank">Բլոգ</a>
+                                          </li>
+    
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="contact.html" target="_blank">Կոնտակներ</a>
+                                          </li>
+                                      </ul>
+                                
+                                    </div>
+                                  </div>
+                                
+                              </nav>
+
+                </div>
+                </header>
+
+           
+            <section class="section-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="home.html" target="_blank">Գլխավոր</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Կատեգորիաներ</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        
+        
+            <section class="category">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="category-title">Մեր կահույքի տեսակները</h2>
+                        <p class="category-text">Պատվիրելով հայկական արտադրության կահույք, կարելի է ստանալ որակ, անհամեմատ մատչելի գնով: 
+                            Կարելի է ունենալ գեղեցիկ տուն,հարմար բյուջեյով ու տարբերվող կահույքով:
+                        </p>
+                  
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-6 col-md-4 categories-card">
+                            <img src="images/1home-category1.png" alt="furniture" class="img-fluid categories-img">
+                            <a href="category-details.html" target="_blank" class="categories-link">Խոհանոցի կահույք</a>
+                        </div>
+                        <div class="col-6 col-md-4 categories-card">
+                            <img src="images/1home-category2.png" alt="furniture" class="img-fluid categories-img">
+                            <a href="" class="categories-link">Հյուրասենյակի կահույք</a>
+                        </div>
+                        <div class="col-6 col-md-4 categories-card">
+                            <img src="images/1home-category3.png" alt="furniture" class="img-fluid categories-img">
+                            <a href="" class="categories-link">Ննջասենյակի կահույք</a>
+                        </div>
+                        <div class="col-6 col-md-4 categories-card">
+                            <img src="images/1home-category4.png" alt="furniture" class="img-fluid categories-img">
+                            <a href="" class="categories-link">Մանկական կահույք</a>
+                        </div>
+                        <div class="col-6 col-md-4 categories-card">
+                            <img src="images/1home-category5.png" alt="furniture" class="img-fluid categories-img">
+                            <a href="" class="categories-link">Գրասենյակի կահույք</a>
+                        </div>
+                        <div class="col-6 col-md-4 categories-card">
+                            <img src="images/1home-category6.png" alt="furniture" class="img-fluid categories-img">
+                            <a href="" class="categories-link">Նախասրահ</a>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+            
+            <section class="services">
+                <div class="conatiner-fluid services-content">
+                    <h3 class="services-title">Որակ, որը կստիպի ընտրել մեզ</h3>
+                </div>
+            
+                <div class="container">
+                    <div class="services-list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="services-list-item">
+                                    <span class="services-number">01 </span>
+                                    <span class="services-icon">
+                                        <img src="images/5category-icon7.png" alt="icon">
+                                    </span>
+                                    <h4 class="services-name">Անվճար դիզայնի խորհրդատվություն</h4>
+                                    <p class="services-description">Շատ համակարգչային տպագրական ծրագրեր և ինտերնետային էջերի խմբագրիչներ այն օգտագործում են որպես իրենց ստանդարտ տեքստային մոդել, և հետևապես,ինտերնետում Lorem Ipsum-ի որոնման արդյունքում կարելի է հայտնաբերել էջեր, որոնքդեռ նոր են կերտվում</p>
+                                </div>
+                            </div>
+            
+                        <div class="col-lg-4">
+                            <div class="services-list-item">
+                                <span class="services-number">02 </span>
+                                <span class="services-icon">
+                                    <img src="images/5category-icon8.png" alt="icon"> 
+                                </span>
+                                <h4 class="services-name">Բարձրորակ նյութեր և աքսեսուարներ</h4>
+                                <p class="services-description">Շատ համակարգչային տպագրական ծրագրեր և ինտերնետային էջերի խմբագրիչներ այն օգտագործում են որպես իրենց ստանդարտ տեքստային մոդել, և հետևապես,ինտերնետում Lorem Ipsum-ի որոնման արդյունքում կարելի է հայտնաբերել էջեր, որոնքդեռ նոր են կերտվում</p>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4">
+                            <div class="services-list-item">
+                                <span class="services-number">03 </span>
+                                <span class="services-icon">
+                                    <img src="images/5category-icon9.png" alt="icon"> 
+                                </span>
+                                <h4 class="services-name">Ժամանակակից արտադրամաս</h4>
+                                <p class="services-description">Շատ համակարգչային տպագրական ծրագրեր և ինտերնետային էջերի խմբագրիչներ այն օգտագործում են որպես իրենց ստանդարտ տեքստային մոդել, և հետևապես,ինտերնետում Lorem Ipsum-ի որոնման արդյունքում կարելի է հայտնաբերել էջեր, որոնքդեռ նոր են կերտվում</p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                </div>
+            </section>
+            
+            <section class="faqs">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <h2 class="h2 fw-bold text-center mt-3 mb-4">Հաճախ Տրվող Հարցեր</h2>
+                        <div class="col-md-8">
+                
+                            <div class="accordion  accordion-flush" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                     Հարց 1
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      Պատասխան՝ Եթե ուզում եք օգտագործել Lorem Ipsum, ապա երևի չեք ցանկանա,որ այն պարունակի ինչ-որ թաքնված հումոր տքեստի միջնամասում:
+                                      Ինտերնետում բոլոր Lorem Ipsum արտադրիչները հակված են կրկնել նույն տեքստը մինչև ցանկալի ծավալի լրացումը,այնինչ իսկականը այս արտադրիչն է:
+                                      Այն օգտագործում է լատիներենի շուրջ 200 բառ՝ դրանք համադրելով նախադասության հնարավոր շարադասությունների հետ,որպեսզի արտադրի ճշմարիտ Lorem Ipsum:
+                                      Արտադրված Lorem Ipsum-ը, արդյունքում չունի կրկնություններ,հումորային բովանդակություն կամ այլ անիրական բառեր:
+                                      <br>
+                                      Կան Lorem Ipsum-ի շատ տարբերակներ, սակայն շատերը աղավաղվել են տարաբնույթ, երբեմն նույնիսկ լատիներենից շատ հեռու և անհավանական բառերի և հումորի ավելացման արդյունքում:
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Հարց 2
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Պատասխան՝ Եթե ուզում եք օգտագործել Lorem Ipsum, ապա երևի չեք ցանկանա,որ այն պարունակի ինչ-որ թաքնված հումոր տքեստի միջնամասում:
+                                      Ինտերնետում բոլոր Lorem Ipsum արտադրիչները հակված են կրկնել նույն տեքստը մինչև ցանկալի ծավալի լրացումը,այնինչ իսկականը այս արտադրիչն է:
+                                      Այն օգտագործում է լատիներենի շուրջ 200 բառ՝ դրանք համադրելով նախադասության հնարավոր շարադասությունների հետ,որպեսզի արտադրի ճշմարիտ Lorem Ipsum:
+                                      Արտադրված Lorem Ipsum-ը, արդյունքում չունի կրկնություններ,հումորային բովանդակություն կամ այլ անիրական բառեր:
+                                      <br>
+                                      Կան Lorem Ipsum-ի շատ տարբերակներ, սակայն շատերը աղավաղվել են տարաբնույթ, երբեմն նույնիսկ լատիներենից շատ հեռու և անհավանական բառերի և հումորի ավելացման արդյունքում:
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Հարց 3
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Պատասխան՝ Եթե ուզում եք օգտագործել Lorem Ipsum, ապա երևի չեք ցանկանա,որ այն պարունակի ինչ-որ թաքնված հումոր տքեստի միջնամասում:
+                                        Ինտերնետում բոլոր Lorem Ipsum արտադրիչները հակված են կրկնել նույն տեքստը մինչև ցանկալի ծավալի լրացումը,այնինչ իսկականը այս արտադրիչն է:
+                                        Այն օգտագործում է լատիներենի շուրջ 200 բառ՝ դրանք համադրելով նախադասության հնարավոր շարադասությունների հետ,որպեսզի արտադրի ճշմարիտ Lorem Ipsum:
+                                        Արտադրված Lorem Ipsum-ը, արդյունքում չունի կրկնություններ,հումորային բովանդակություն կամ այլ անիրական բառեր:
+                                        <br>
+                                        Կան Lorem Ipsum-ի շատ տարբերակներ, սակայն շատերը աղավաղվել են տարաբնույթ, երբեմն նույնիսկ լատիներենից շատ հեռու և անհավանական բառերի և հումորի ավելացման արդյունքում:
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Հարց 4
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Պատասխան՝ Եթե ուզում եք օգտագործել Lorem Ipsum, ապա երևի չեք ցանկանա,որ այն պարունակի ինչ-որ թաքնված հումոր տքեստի միջնամասում:
+                                        Ինտերնետում բոլոր Lorem Ipsum արտադրիչները հակված են կրկնել նույն տեքստը մինչև ցանկալի ծավալի լրացումը,այնինչ իսկականը այս արտադրիչն է:
+                                        Այն օգտագործում է լատիներենի շուրջ 200 բառ՝ դրանք համադրելով նախադասության հնարավոր շարադասությունների հետ,որպեսզի արտադրի ճշմարիտ Lorem Ipsum:
+                                        Արտադրված Lorem Ipsum-ը, արդյունքում չունի կրկնություններ,հումորային բովանդակություն կամ այլ անիրական բառեր:
+                                        <br>
+                                        Կան Lorem Ipsum-ի շատ տարբերակներ, սակայն շատերը աղավաղվել են տարաբնույթ, երբեմն նույնիսկ լատիներենից շատ հեռու և անհավանական բառերի և հումորի ավելացման արդյունքում:
+                                      </div>
+                                    </div>
+                                  </div>
+                
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Հարց 5
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Պատասխան՝ Եթե ուզում եք օգտագործել Lorem Ipsum, ապա երևի չեք ցանկանա,որ այն պարունակի ինչ-որ թաքնված հումոր տքեստի միջնամասում:
+                                        Ինտերնետում բոլոր Lorem Ipsum արտադրիչները հակված են կրկնել նույն տեքստը մինչև ցանկալի ծավալի լրացումը,այնինչ իսկականը այս արտադրիչն է:
+                                        Այն օգտագործում է լատիներենի շուրջ 200 բառ՝ դրանք համադրելով նախադասության հնարավոր շարադասությունների հետ,որպեսզի արտադրի ճշմարիտ Lorem Ipsum:
+                                        Արտադրված Lorem Ipsum-ը, արդյունքում չունի կրկնություններ,հումորային բովանդակություն կամ այլ անիրական բառեր:
+                                        <br>
+                                        Կան Lorem Ipsum-ի շատ տարբերակներ, սակայն շատերը աղավաղվել են տարաբնույթ, երբեմն նույնիսկ լատիներենից շատ հեռու և անհավանական բառերի և հումորի ավելացման արդյունքում:
+                                      </div>
+                                    </div>
+                                  </div>
+                
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <div class="footer-top">
+                    <div id="contacts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="img-box d-none d-xxl-flex">
+                                    <img src="images/image1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2 offset-xxl-3 col-xxl-4">
+                                    <div class="contact-info">
+                                        <h3>Կապ Մեզ Հետ</h3>
+                                        <div>
+                                        <p>Ուղարկեք մեզ նամակ, և մեր մասնագետները կապ կհաստատեն Ձեզ հետ</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                            <div class="col-md-5 col-lg-4 col-xxl-4">
+                                <form class="contact-form"  method="post">
+                                    
+                                    <div class="form-container">
+                                        <div class="input-style">
+                                            <input type="text" class="form-control" placeholder="Անուն Ազգանուն">
+                                        </div>
+            
+                                        <div class="input-style">
+                                            <input type="text" class="form-control" placeholder="Էլ. Հասցե">
+                                        </div>
+            
+                                        <div class="input-style">
+                                            <input type="tel"  class="form-control" placeholder="Հեռախոսահամար">
+                                        </div>
+            
+                                        <div class="input-style">
+                                            <textarea class="form-control" placeholder="Հաղորդագրություն"></textarea>
+                                        </div>
+                                    </div>
+                                    <a href="contact.html" type="submit" class="submit" role="button" target="_blank">Ուղարկել Նամակ</a>
+                                </form> 
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            
+    <div class="footer-bottom">
+        <div class="container-fluid">
+            <div class="row d-flex flex-column-reverse flex-md-row">
+                <div class="col-md-5 col-lg-3 offset-md-1 offset-lg-2 offset-xxl-3 col-xxl-4">
+                    <div class="footer-left-side">
+                    <img src="images/footer-logo.png" alt="Logo" class="footer-logo  d-none d-md-block">
+                        <div class="copyright">
+                            2023 KAMOD. Բոլոր Իրավունքները պաշտպանված են <br>Ստեղծող՝ <a href="https://voodoo.pro/" class="footer-link" target="_blank">VooDoo programming 
+                            <img src="images/voodoo-doll.png" alt="voodoo-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-5 col-lg-5 col-xxl-4">
+                    <div class="footer-right-side">
+                    <img src="/resources/images_n/header-logo.png" alt="" class="footer-logo  d-md-none">
+                        <ul class="footer-menu list-unstyled">
+                            <li>
+                                <a href="projects.html" target="_blank">Աշխատանքներ</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html" target="_blank" class="text-nowrap">Մեր Մասին</a>
+                            </li>
+
+                            <li>
+                                <a href="faqs.html" target="_blank">ՀՏՀ</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html" target="_blank">Կոնտակտներ</a>
+                            </li>
+
+                            <li>
+                                <a href="privacy.html" target="_blank">Քաղաքականություն</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer-social-links list-unstyled m-0 d-flex pb-20">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="go-top sticky-bottom mb-4">
+    <a href="#header" class="top-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
+</div>
+<div class="container-fluid py-3 cookies-content sticky-bottom">
+    <div class="row cookies-row">
+        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 cookies-text-col">
+          <p class="text-white cookies-text">Մենք օգտագործում ենք թխուկներ՝ ապահովելու մեր կայքի պատշաճ գործունեությունը:Դրանք օգտագործվում են այն դեպքում, երբ դուք համաձայն եք &laquo;վիճակագրության&raquo; հետ
+            <a href="#" class="cookies-link">Թխուկների քաղաքականություն</a>
+          </p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 cookies-btn-col">
+          <button class="cookies-btn text-uppercase rounded-0">Ընդունել բոլորը</button>
+        </div>
+    </div>
+  </div>
+            
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".menuSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
+<script>
+    let searchBtn=document.querySelector('.search-btn');
+    let closeBtn=document.querySelector('.close');
+    let searchMenu=document.querySelector('.input');
+    let mobileSearchBtn=document.querySelector('.mobile-search-btn');
+    let mobileCloseBtn=document.querySelector('.mobile-close');
+    let mobileSearchMenu=document.querySelector('.mobile-input');
+    let linking=document.querySelector('.main-link');
+    let menu=document.querySelector('.submenu');
+    
+
+    linking.onmouseover=function() {mouseOver()};
+    linking.onmouseout = function() {mouseOut()};
+    function mouseOver() {
+    menu.style.display='flex';
+    menu.style.opacity=1;
+    menu.style.zIndex=2;
+    }
+    function mouseOut(){
+        menu.style.opacity=0;
+        menu.style.zIndex=0;
+    }
+
+    searchBtn.addEventListener('click',()=>{
+        searchMenu.style.display="flex";
+            searchMenu.style.position="absolute";
+            searchMenu.classList.add('transition');
+            searchMenu.style.left="0%";
+            searchMenu.style.width="100%";
+            searchMenu.style.zIndex="1";
+            searchMenu.classList.add('transition');
+         
+
+    });
+    closeBtn.addEventListener('click',()=>{
+     searchMenu.style.display="none";
+    });
+
+
+    mobileSearchBtn.addEventListener('click',()=>{
+        mobileSearchMenu.style.display="flex";
+        mobileSearchMenu.style.position="absolute";
+        mobileSearchMenu.style.left="0%";
+        mobileSearchMenu.style.right="0%";
+        mobileSearchMenu.style.width="100vw";
+        mobileSearchMenu.style.zIndex="1";
+    });
+    mobileCloseBtn.addEventListener('click',()=>{
+     mobileSearchMenu.style.display="none";
+    });
+
+ 
+    let cookieBtn=document.querySelector('.cookies-btn');
+    let content=document.querySelector('.cookies-content');
+    cookieBtn.addEventListener('click', ()=>{
+      content.style.display='none';
+    });
+  
+   
+   </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
