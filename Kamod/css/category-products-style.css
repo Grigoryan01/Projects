@@ -1,0 +1,210 @@
+:root{
+    --color-black:#000000;
+    --color-dark:#161616;
+    --color-grey:#6c757d;
+    --color-green:#005c66;
+    --color-light:#f4f4f4;
+
+}
+.section-breadcrumb{
+    padding: 19px 0;
+    background-color:var(--color-light);
+    z-index: 1;
+    position: relative;
+}
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.breadcrumb .breadcrumb-item a{
+    color:var(--color-grey) !important;
+    text-decoration: none;
+    font-size: 12px;
+}
+.breadcrumb-item.active {
+    /* color: var(--bs-breadcrumb-item-active-color); */
+    font-size: 12px !important;
+    color: var(--color-black) !important;
+}
+.breadcrumb-item >a:hover{
+    cursor: pointer;
+    color: var(--color-green) !important;
+    transition: all .5s ease;
+}
+.categories{
+    z-index: 1;
+    position: relative;
+}
+.categories-title{
+    font-size: 20px;
+    color: #161616;
+    font-weight: 600;
+    font-family: montserratsemiboldarm,sans-serif;
+    text-align: center;
+    padding: 40px 0 35px;
+}
+@media screen and (min-width: 992px){
+    .category-product-title{
+        font-size: 32px;
+        padding: 80px 0 75px;
+    }
+}
+@media screen and (min-width: 768px){
+    .category-product-title{
+        font-size: 25px;
+        padding: 60px 0 55px;
+    }
+}
+.category-product-title {
+    font-size: 20px;
+    color: #161616;
+    font-family: montserratsemiboldarm,sans-serif;
+    text-align: center;
+    padding: 40px 0 35px;
+}
+.furniture-card {
+    border: 14px solid #f9f5f5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 100%;
+}
+.furniture-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.furniture-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+.furniture-card-title {
+    font-size: 14px;
+    color: #000;
+    font-family: montserratsemiboldarm,sans-serif;
+    margin-bottom: 6px;
+}
+.furniture-card-subtitle {
+    font-size: 11px;
+    color: #005c66;
+    font-family: montserratlightarm,sans-serif;
+    text-transform: uppercase;
+}
+.card-link{
+    font-size: 12px;
+    color: var(--color-black);
+    font-family: montserratboldarm,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px){
+.card-link {
+    bottom: 55px;
+    left: 35px;
+}
+}
+@media only screen and (min-width: 576px){
+.card-link {
+    bottom: 45px;
+    left: 35px;
+}
+}
+.card-link {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    font-size: 12px;
+    color: var(--black-color);
+    font-family: montserratboldarm,sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
+    letter-spacing: 2px;
+}
+
+.card-link:hover{
+    color: var(--color-green);
+    border-bottom: 1px solid var(--color-green);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.pagination{
+    border: none !important;
+    border-color: #fff !important;
+    --bs-pagination-active-color: #000 !important;
+    --bs-pagination-active-bg: #fff !important; 
+    --bs-pagination-border-color: #fff !important;
+    --bs-pagination-active-border-color: #fff !important;
+ 
+}
+.page-link:hover {
+    z-index: 2;
+    color: var(--bs-pagination-hover-color);
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.page-link:focus {
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+.page-link{
+    color: #777 !important;
+}
+.page-link.active{
+    color: #000 !important;
+}
+@media screen and (max-width:567px){
+    .furniture-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+ .furniture-card-img-overlay:hover .grid-overlay::before {
+    opacity: 1;
+    transform: scale(1);
+    transition:  all ease .5s;
+}
+ .grid-overlay::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgb(0 92 102/60%);
+    opacity: 0;
+    transform: scale(.2);
+    transition:  all ease .5s;
+}
+.grid-overlay{
+    text-decoration: none;
+}
