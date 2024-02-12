@@ -1,0 +1,207 @@
+:root{
+    --color-black:#000000;
+    --color-dark:#161616;
+    --color-grey:#6c757d;
+    --color-green:#005c66;
+    --color-light:#f4f4f4;
+
+}
+
+.about{
+    width: 100%;
+    height: calc(100vh - 95px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/3menu-img1.png');
+    display: flex;
+    z-index: 1;
+    position: relative;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.about-text{
+    font-family: montserratsemiboldarm,sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+@media  screen and (min-width: 768px){
+.about-title{
+    font-size: 45px !important;
+}
+}
+.about-title {
+    color: #fff;
+    font-size: 32px;
+    font-family: montserratboldarm,sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+.about-us{
+    padding: 80px 0;
+}
+.about-us-text{
+    margin-bottom: 30px;
+}
+.about-us-title{
+    font-size: 28px;
+    font-family: montserratmediumarm,sans-serif;
+    color: #161616;
+    letter-spacing: 1px;
+}
+.about-us-paragraph{
+    font-size: 14px;
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.counter,
+.plus{
+    font-size: 35px;
+    color: #000;
+}
+.text_black {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.mxw-880{
+    max-width: 880px;
+}
+.order-title{
+    font-family: montserratmediumarm,sans-serif !important;
+    font-size: 20px;
+    color: #161616;
+    line-height: 30px;
+}
+.order-text{
+    font-family: montserratmediumarm,sans-serif;
+    font-size: 14px !important;
+    color: #777;
+}
+.gray-bg{
+    background-color: #f4f4f4;
+}
+.order-info-area{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 15px;
+}
+.order-info-title{
+    font-family: montserratmediumarm,sans-serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 27px;
+}
+.order-info-text{
+    font-family: montserratmediumarm,sans-serif;
+    font-size: 14px!important;
+    color: #777;
+}
+.btn-group{
+    margin-top: 25px;
+}
+.btn-group a:first-child{
+    margin-right: 12px;
+}
+.order-btn{
+    font-family: montserratboldarm,sans-serif;
+    height: 45px;
+    min-width: 190px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    text-decoration: none;
+}
+.order-btn:hover{
+    background-color: #005c66;
+    border-color: #005c66 !important;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.reasons-section {
+    padding: 80px 0;
+    margin-top: 80px;
+}
+.reasons-title{
+    font-size: 20px;
+    color: #161616;
+    font-family: montserratsemiboldarm,sans-serif;
+    margin-bottom: 50px;
+}
+.reason-item {
+    margin: 30px 0;
+}
+.reason-item h4 {
+    font-size: 16px;
+    color: #000;
+    font-family: montserratboldarm,sans-serif;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.reasons-section .reason-item p {
+    color: #777;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.reasons-img:hover{
+    cursor: pointer;
+    animation: rotate 2s ease-in-out;
+}
+.brand-list{
+    padding: 55px 0 45px;
+    border-bottom: 1px solid #e4e4e4;
+}
+@keyframes rotate{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(180deg);
+    }
+}
+@media screen and (max-width:768px){
+    .text-column{
+        order: 0;
+    }
+    .img-column{
+        order: 1;
+    }
+}
+@media screen and (max-width:576px){
+    .btn-group a:first-child{
+        margin-right: 0px !important; 
+        margin-bottom: 12px;
+    }
+}

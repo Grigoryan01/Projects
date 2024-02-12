@@ -1,0 +1,197 @@
+:root{
+    --color-black:#000000;
+    --color-dark:#161616;
+    --color-grey:#6c757d;
+    --color-green:#005c66;
+    --color-light:#f4f4f4;
+
+}
+.section-breadcrumb{
+    padding: 19px 0;
+    background-color:var(--color-light);
+    z-index: 1;
+    position: relative;
+}
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.breadcrumb .breadcrumb-item a{
+    color:var(--color-grey) !important;
+    text-decoration: none;
+    font-size: 12px;
+}
+.breadcrumb-item.active {
+    /* color: var(--bs-breadcrumb-item-active-color); */
+    font-size: 12px !important;
+    color: var(--color-black) !important;
+}
+.breadcrumb-item >a:hover{
+    cursor: pointer;
+    color: var(--color-green) !important;
+    transition: all .5s ease;
+}
+.blog-section{
+    padding: 50px;
+    z-index: 1;
+    position: relative;
+}
+.post-date{
+    font-size: 11px;
+    color: #005c66 !important;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px){
+    .blog-headig-title {
+        font-size: 20px;
+    }
+}
+.blog-headig-title {
+    font-size: 25px;
+    color: #161616;
+    font-family: montserratsemiboldarm,sans-serif;
+    font-weight: 600;
+}
+.blog-img{
+    width: 100%;
+}
+.blog-img:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: all .5s ease-in-out;
+}
+@media  screen and (max-width: 768px){
+    .info-paragraph {
+        font-size: 14px;
+    }
+    .info-title{
+        font-size: 16px;
+    }
+}
+.info-paragraph{
+    font-size: 16px;
+    color:#777;
+}
+.info-title{
+    font-weight: 600;
+    font-size: 18px;
+    color:#000;
+}
+.share-text{
+    color: #161616;
+    font-family: montserratsemiboldarm,sans-serif!important;
+    font-size: 13px!important;
+    font-weight: 600;
+}
+
+.sidebar-title {
+    color: #000;
+    font-family: montserratboldarm,sans-serif!important;
+    font-size: 16px!important;
+}
+.recent-post-item {
+    margin: 27px 0;
+}
+.media-body {
+    margin-left: 10px;
+}
+.post-date {
+    font-size: 11px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.post-text{
+    color: #000;
+    font-family: montserratsemiboldarm,sans-serif!important;
+    font-size: 13px!important;
+    text-decoration: none;
+}
+.social-link-area{
+    width: 100%;
+    padding: 25px 0 55px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.details-social-links{
+    display: flex;
+}
+.details-social-links li a {
+    color: #000;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.blog-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+@media only screen and (min-width: 576px){
+    .blog-pagination::before {
+        content: "";
+        height: 56px;
+        width: 1px;
+        background: #e4e4e4;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+.next-blog,
+.prev-blog {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.media-body-subtitle{
+    font-size: 10px!important;
+    color: #777;
+}
+.media-body-title{
+    color: #000;
+    font-family: montserratsemiboldarm,sans-serif!important;
+    font-weight: 600;
+    text-decoration: none;
+}
+.post-img {
+    min-width: 70px;
+    width: 70px;
+    display: block;
+    margin: 10px 10px 10px 20px;
+}
+.sidebar-title{
+    color: #000;
+    font-family: montserratboldarm,sans-serif!important;
+    font-weight: 600;
+    font-size: 16px!important;
+}
+.recent-post-item {
+    margin: 27px 0;
+}
+.post-img{
+    min-width: 70px;
+    width: 70px;
+    display: block;
+}
+.post-text{
+    color: #000;
+    font-family: montserratsemiboldarm,sans-serif!important;
+    font-size: 13px!important;
+}
+
+.social-address{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.social-address a{
+    color: #000;
+    font-family: montserratsemiboldarm,sans-serif!important;
+    font-size: 13px!important;
+    text-decoration: none;
+}
